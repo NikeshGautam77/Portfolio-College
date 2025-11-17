@@ -393,6 +393,8 @@ nav ul li a.active:hover {
 
 
 
+
+
 /* Truck Feature Card */
 .truck-feature {
   padding: 50px 20px;
@@ -487,4 +489,382 @@ nav ul li a.active:hover {
     justify-content: center;
     gap: 20px;
   }
+}
+.cta-banner {
+  background:linear-gradient(135deg, rgba(165, 0, 33, 0.1) 0%, rgba(255, 215, 0, 0.1) 100%);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin: 60px auto;
+  max-width: 1000px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-banner:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cta-banner h2 {
+  font-size: 2.2rem;
+  color: #A50021;
+  margin-bottom: 15px;
+}
+
+.cta-banner p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.cta-banner .cta-button {
+  background: linear-gradient(90deg, #A50021, #FFD700);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+
+
+@media (max-width: 768px) {
+  .cta-banner {
+    padding: 30px 20px;
+  }
+
+  .cta-banner h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-banner p {
+    font-size: 1rem;
+  }
+}
+
+.coverage-map-section {
+  margin: 60px auto;
+  max-width: 1000px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.coverage-description {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.map-container {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.map-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+/* MD PHOTO */
+.team-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ebe1e1;
+  border-radius: 12px; /* Rounded edges like cards */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08); /* Subtle shadow */
+  margin: 50px auto;
+  max-width: 1100px; /* Keeps it aligned with other sections */
+}
+
+.team-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #A50021; /* Brand color */
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  max-width: 250px;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #FFD700;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s;
+}
+
+.team-member img:hover {
+  border-color: #FFA500;
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+}
+
+.team-member h3 {
+  font-size: 20px;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #666;
+}
+
+
+/* Footer Styles */
+
+.site-footer {
+  width: 100%;
+  background-color: #000; /* Full black background */
+  color: #fff;
+  padding: 60px 0 30px; /* Removed horizontal padding */
+  font-size: 0.95rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 0%;
+  padding: 0 30px; /* Moved padding here to keep content readable */
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+  color: #FFD700;
+  margin-bottom: 15px;
+}
+
+.footer-column p,
+.footer-column ul li {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #FFD700;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  padding: 20px 30px 0;
+  color: #888;
+}
+
+
+
+.footer-bottom a.creator-link {
+  color: yellow;
+  
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a.creator-link:hover {
+  color: red;
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin-bottom: 30px;
+  }
+}
+
+/* Call to Action Button */
+.cta-button {
+    background: linear-gradient(135deg, #A50021 0%, #FFD700 100%);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(165, 0, 33, 0.3);
+}
+
+/* Card Styles */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-top: 5px solid #A50021;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: #A50021;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Contact Form */
+.contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    color: #A50021;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #A50021;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .side-title {
+        font-size: 20px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .content {
+        padding: 20px 15px;
+    }
+
+    #menu a.active {
+        background: linear-gradient(135deg, #A50021 0%, #FFD700 100%);
+        color: white;
+    }
+}
+.form-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+    display: none; /* hidden until shown */
+}
+
+.form-message.success {
+    background: #e6ffed;
+    color: #22863a;
+    border: 1px solid #22863a;
+}
+
+.form-message.error {
+    background: #ffe6e6;
+    color: #a50021;
+    border: 1px solid #a50021;
+}
+
+
+
+/* Additional map*/
+.map-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.map-container {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 0 auto;
 }
