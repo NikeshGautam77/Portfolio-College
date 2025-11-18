@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bijaya Bhagwati Dhuwani Sewa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Ws1.css">
+    
+</head>
+<body>
+
+<div class="header">
+    <img src="Images/PFP.png" alt="Logo" class="logo-1">
+    
+    <h1 class="side-title">NIKESH GAUTAM</h1>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#" data-tab="home" class="tab-link active">Home</a></li>
+            <li><a href="#" data-tab="about" class="tab-link">About Me</a></li>
+            <li><a href="#" data-tab="services" class="tab-link">Qualifications</a></li>
+            <li><a href="#" data-tab="contact" class="tab-link">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <button id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+   
+</div>
+
+<div class="content">
+
+<!-- Home Tab -->
+    <div id="home" class="tab-content active">
+        <div class="hero-section">
+            <h1 class="hero-title"><marquee>Welcome to My Profile</marquee></h1>
+            <p class="hero-subtitle">
+                Discover my journey, skills, and projects as I strive to make a difference in the world through technology and innovation.
+            </p>
+            <a href="#" class="cta-button" data-tab="about">Explre More About Me</a>
+        </div>
+          
+<!-- Truck Feature Card -->
+  <div class="truck-feature">
+    <div class="feature-card">
+      <div class="feature-image">
+        <img src="Images/1STPROJECT.png" alt="Our Truck">
+      </div>
+      <div class="feature-text">
+        <h2>MY FIRST PROJECT </h2>
+        <p>
+         I did my first project of BIC Weather App service in Nepal. It is my proud moment to be a part of this project and I have learned a lot from this experience.
+        </p>
+        <hr>
+        <div class="feature-stats">
+          <div class="stat">
+            <h3>600+</h3>
+            <p>Cities Weather</p>
+          </div>
+          <div class="stat">
+            <h3>Shows the Weather</h3>
+            <p>Through Emoji as well</p>
+          </div>
+          
+          <div class="stat">
+            <h3>1 Years</h3>
+            <p>Experience</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<BR>
+<BR>
+
+
+
+    </div>
+  
+
+  
+
+
+    <!-- About Us Tab -->
+    <div id="about" class="tab-content">
+        <h2 class="section-title">About Me</h2>
+        <div class="card">
+            <h3>My Story</h3>
+            <p>
+              My name is Nikesh Prasad Gautam, a second-year student at Birat International College (BIC) pursuing a degree in Computer Science and Information Technology. I am passionate about technology and eager to learn and grow in this dynamic field.
+              Throughout my academic journey, I have developed a strong foundation in programming, software development, and problem-solving skills.
+              I am enthusiastic about applying my knowledge to real-world projects and contributing to innovative solutions.    
+                 </p>
+            <p>
+              I am excited about the opportunities that lie ahead and look forward to making a positive impact in the world of technology.  
+               </p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card">
+                <h3>My Mission</h3>
+                <p>
+                  "To leverage technology to create innovative solutions that enhance lives and drive progress."
+                </p>
+                </div>
+            <div class="card">
+                <h3>My Vision</h3>
+                <p>
+                  "To be a catalyst for positive change through technology, empowering individuals and communities worldwide."
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Services Tab -->
+    <div id="services" class="tab-content">
+        <h2 class="section-title">My Education</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>1.School Level</h3>
+                <p>I completed my school level upto Class 10 in Blooming Lotus English Secondaty School.</p>
+                <ul style="color: #666; margin-top: 15px; padding-left: 20px;">
+                    <li>Choosed Computer in class 8</li>
+                    <li>Interested In computer since then</li>
+                    <li>Got A Grade in See Exam -3.35GPA</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h3>2. +2 Level</h3>
+                <p>I completed my +2 level of Class 11 and 12 in MerryLand College Biratnagar.</p>
+                <ul style="color: #666; margin-top: 15px; padding-left: 20px;">
+                    <li>Choosed Computer in class 11 and 12</li>
+                    <li>Choosed Account as well</li>
+                    <li>Got A Grade in See Exam -3.59GPA</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h3>3. Bachelor at BIC</h3>
+                <p>To Complete my bachelor level i am currently studying at BIC</p>
+                <ul style="color: #666; margin-top: 15px; padding-left: 20px;">
+                    <li>Completed 1st Year</li>
+                    <li>Currently in 2nd Year</li>
+                    <li>Learning Many New Things</li>
+                    
+                </ul>
+            </div>
+            
+
+        </div>
+
+
+        
+
+    </div>
+
+
+
+    <!-- Contact Tab -->
+    <div id="contact" class="tab-content">
+      <h2 class="section-title">Contact Me</h2>
+        <div class="contact-form">
+            <form action="save_contact.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Additional Details</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us about your requirements..."></textarea>
+                </div>
+                
+                <button type="submit" class="cta-button" style="width: 100%;">Send Inquiry</button>
+
+                <!-- 🔹 Success/Error messages stay INSIDE form -->
+                <div class="form-message success">✅ Your inquiry has been sent successfully!</div>
+                <div class="form-message error">❌ Something went wrong. Please try again.</div>
+            </form>
+        </div>
+      </div>
+
+          
+          <div class="card-grid" style="margin-top: 40px;">
+              <div class="card">
+                  <h3>📞 Phone</h3>
+                  <p>Call us for immediate assistance</p>
+                  <p style="font-weight: bold; color: #A50021;">+977 980-2761542</p>
+                  <p style="font-weight: bold; color: #A50021;">+977 980-2771031</p>
+              </div>
+              
+              <div class="card">
+                  <h3>📍 Social Sites</h3>
+                  <p>Reach Me Through Linkedin</p>
+                   <p style="color: #666;">
+                    <a href="https://www.linkedin.com/in/nikesh-gautam-1479b734b/" target="_blank" rel="noopener noreferrer">
+                     Click here to reach me at LinkedIn
+                     </a>
+    </p>
+              </div>
+              
+              <div class="card">
+                  <h3>⏰ Business Hours</h3>
+                  <p>I am here to help you</p>
+                  <p style="color: #666;">Daily: 9:00 AM - 8:00 PM</p>
+              </div>
+          </div>
+          <div class="map-section">
+          <h2 class="section-title">Visit Me at My College BIC</h2>
+          <h4 style="color:linear-gradient(135deg, #A50021 0%, #FFD700 100%);; margin-bottom: 20px;">Second Year - L5CG1 Group </h4>
+
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps?q=26.464065,87.274948&hl=en&z=15&output=embed"
+                width="100%"
+                height="400"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+  </div>
+
+</div>
+    </div>
+   <br>
+</div>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Nikesh Prasad Gautam</h3>
+          <p> 
+            Passionate about technology and eager to learn and grow in the dynamic field of Computer Science and Information Technology.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#" data-tab="home" class="tab-link">Home</a></li>
+            <li><a href="#" data-tab="about" class="tab-link">About Me</a></li>
+            <li><a href="#" data-tab="services" class="tab-link">Education</a></li>
+            <li><a href="#" data-tab="contact" class="tab-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact Info</h4>
+          <p>📍 Second Year L5CG1 GROUP</p>
+          <p>📞 +977 980-2761542</p>
+          <p>📞 +977 980-2771031</p>
+          <p>⏰ Daily: 9:00 AM – 8:00 PM</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; Nikesh Prasad Gautam. All rights reserved.</p>
+        <p>
+          Website Created By 
+          <a href="https://www.linkedin.com/in/nikesh-gautam-1479b734b/" target="_blank" class="creator-link"><u>Nikesh Gautam</u></a>
+        </p>
+      </div>
+
+    </footer>
+
+<script src="Ws1.js"></script>
+</body>
+</html>
