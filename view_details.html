@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiry Details</title>
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 60px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #A50021;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .label {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .value-box {
+            background: #f9f9f9;
+            padding: 12px;
+            border-radius: 10px;
+            margin-top: 5px;
+            border-left: 4px solid #A50021;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-top: 25px;
+            text-align: center;
+            background: #A50021;
+            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #d0002a;
+        }
+
+        .empty {
+            color: #999;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Inquiry Details</h1>
+
+        <p class="label">Full Name:</p>
+        <p id="name" class="value-box empty"></p>
+
+        <p class="label">Email Address:</p>
+        <p id="email" class="value-box empty"></p>
+
+        <p class="label">Additional Message:</p>
+        <p id="message" class="value-box empty"></p>
+
+        <a href="index.html" class="btn">⬅ Back to Home</a>
+    </div>
+
+    <script>
+        // Get data from localStorage
+        const name = localStorage.getItem("contactName");
+        const email = localStorage.getItem("contactEmail");
+        const message = localStorage.getItem("contactMessage");
+
+        // Display values
+        document.getElementById("name").textContent = name || "No name provided.";
+        document.getElementById("email").textContent = email || "No email provided.";
+        document.getElementById("message").textContent = message || "No message provided.";
+
+        // Remove 'empty' class if value exists
+        if (name) document.getElementById("name").classList.remove("empty");
+        if (email) document.getElementById("email").classList.remove("empty");
+        if (message) document.getElementById("message").classList.remove("empty");
+    </script>
+
+</body>
+</html>
