@@ -395,16 +395,16 @@ nav ul li a.active:hover {
 
 
 
-/* Truck Feature Card */
-.truck-feature {
+/* Project Feature Card */
+.Project-feature {
   padding: 50px 20px;
   background: linear-gradient(135deg, #f5f7fa 0%, #e2e8f0 100%);
 }
-.truck-feature:hover{
+.Project-feature:hover{
   transform: scale(1.02); 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
 }
-.truck-feature {
+.Project-feature {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
