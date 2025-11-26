@@ -868,3 +868,29 @@ nav ul li a.active:hover {
   max-width: 1000px;
   margin: 0 auto;
 }
+
+
+
+
+#skills {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.skill {
+  margin: 20px 0;
+}
+
+.progress-bar {
+  background: #eee;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.progress {
+  background: linear-gradient(90deg, #4caf50, #81c784);
+  height: 100%;
+  width: 0; /* start hidden */
+  transition: width 2s ease; /* smooth animation */
+}

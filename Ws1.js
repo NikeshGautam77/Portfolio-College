@@ -133,3 +133,28 @@ document.addEventListener('DOMContentLoaded', function () {
         else header.classList.remove('small');
     });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const progressBars = document.querySelectorAll(".progress");
+
+  const options = {
+    threshold: 0.5 // trigger when 50% of section is visible
+  };
+
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const bar = entry.target;
+        const value = bar.getAttribute("data-progress");
+        bar.style.width = value + "%";
+        observer.unobserve(bar); // animate only once
+      }
+    });
+  }, options);
+
+  progressBars.forEach(bar => {
+    observer.observe(bar);
+  });
+});
