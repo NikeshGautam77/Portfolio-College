@@ -189,3 +189,49 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelector(".slides");
+  const images = document.querySelectorAll(".slides img");
+  const prevBtn = document.querySelector(".prev");
+  const nextBtn = document.querySelector(".next");
+
+  let index = 0;
+
+  function showSlide(i) {
+    if (i < 0) {
+      index = images.length - 1;
+    } else if (i >= images.length) {
+      index = 0;
+    } else {
+      index = i;
+    }
+    slides.style.transform = `translateX(${-index * 100}%)`;
+  }
+
+  prevBtn.addEventListener("click", () => showSlide(index - 1));
+  nextBtn.addEventListener("click", () => showSlide(index + 1));
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const backToTopBtn = document.getElementById("back-to-top");
+
+  // Show button when scrolling down
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 200) { // show after 200px scroll
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  // Smooth scroll to top when clicked
+  backToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+});
