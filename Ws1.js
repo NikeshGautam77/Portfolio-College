@@ -175,3 +175,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const projectCards = document.querySelectorAll(".project-card");
+
+  projectCards.forEach(card => {
+    card.addEventListener("click", function () {
+      const link = card.getAttribute("data-link");
+      if (link) {
+        window.location.href = link; // redirect to project
+      }
+    });
+  });
+});
